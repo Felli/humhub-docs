@@ -18,7 +18,6 @@ See more information about Yii 2.0 here:
 - Raname e.g. ExampleModule.php && ExampleEvents.php   to Module.php / Events.php
 - Changed former autostart.php to config.php: [config.php](dev-module-index.md#configphp)
 - Migrate database (see below)
- 
 
 ### Database / Migrations
 
@@ -55,7 +54,6 @@ class m150705_081309_namespace extends Migration
 }
 ```
 
-
 ### Content & ContentAddon
 
 getContentTitle is now divided into
@@ -73,7 +71,6 @@ TBD
 - Return array
 - Namespaces
 
-
 ### Urls
 
 [[\humhub\modules\content\components\activerecords\ContentContainer::createUrl]] (Space/User) still provides the method createUrl to build URLs in container context (sguid/uguid).
@@ -86,7 +83,6 @@ Please recreate Activities as described here: [[dev-module-activities.md]]
 
 Since 0.20 there is an automatic "created" Activity for Content. 
 
-
 To migrate existing Activities to the new Scheme you need to create an migration.
 
 Example Migration:
@@ -97,10 +93,7 @@ $this->update('activity', ['class' => 'exampleModule\activities\MyActivity'], ['
 
 // Rename own "Created" Activities to core 
 $this->update('activity', ['class' => 'humhub\modules\content\activities\ContentCreated', 'module' => 'content'], ['class' => 'PollCreated']);
-
-
 ```
-
 
 ### Assets
 
@@ -121,7 +114,6 @@ class Module extends \humhub\components\Module
 {
 
     public $resourcesPath = 'assets';
-           
 ```
 
 ### Module Configuration 
@@ -133,18 +125,16 @@ Set configRoute attribute instead.
 
 e.g.
 
-
 ```php
 class Module extends \humhub\components\Module
 {
     public $configRoute = '/example/admin/config';
-           
 ```
-
 
 ## (Incomplete) List of changed Helpers/Widgets:
 
 #### EnrichText
+
 ```php
 // New
 echo humhub\widgets\RichText::widget(['text' => $text]);
@@ -190,4 +180,3 @@ echo \humhub\widgets\AjaxButton::widget([
 #### Yii::app()->input->stripClean
 
 Stripclean is not longer available. use Html::encode() user input on output _and_ create validators.
-

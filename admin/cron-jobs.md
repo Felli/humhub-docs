@@ -1,7 +1,9 @@
-# Cron Job Setup
---------
+Cron Job Setup
+=======
 
-The following are to help you with your Cron Job setup, and they are in no way a 100% guarantee to work for you.
+The following guides are meant to help you with your Cron Job setup, since those settings are highly dependent on your actual environment we can't assure those setting will work for your.
+
+> Note: Make sure to use the right [php cli executable](http://php.net/manual/en/features.commandline.introduction.php) for your jobs!
 
 ### CloudLinux (CentOS) 6
 The following is a default setup for CloudLinux (CentOS) 6 and may not work for all users.

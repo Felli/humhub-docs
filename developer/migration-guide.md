@@ -85,7 +85,7 @@ TBD
 **Important: This release upgrades from Yii1 to Yii2 Framework!**
 
 This requires an extensive migration of all custom modules/themes.
-Find more details here: [HumHub 0.20 Migration](modules-migrate-0.20.md)
+Find more details here: [HumHub 0.20 Migration](old/modules-migrate-0.20.md)
 
 ## Migrate from 0.11 to 0.12
 

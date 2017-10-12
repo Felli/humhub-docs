@@ -4,11 +4,8 @@ Installation
 > Note: It's also possible to install and build HumHub directly from our **Git Repository**.
 Please see [Developer Installation](../developer/git-installation.md) for more details.
 
-
-
 Database
 --------
-
 Create a MySQL Database, e.g.:
 
 ```sql
@@ -27,7 +24,7 @@ FLUSH PRIVILEGES;
 Download HumHub Core Files
 ---------------------------
 
-The easiest way to get HumHub, is the direct download of the complete package under [http://www.humhub.org/downloads](http://www.humhub.org/downloads).
+The easiest way to get HumHub, is the direct download of the complete package under [https://www.humhub.org/download](https://www.humhub.org/download).
 
 After the download completed, just extract the package into the htdocs folder of your webserver.
 

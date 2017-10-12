@@ -2,13 +2,11 @@ Console
 =======
 
 Some administrative tasks can also or exclusively be executed by console. All available console commands can be displayed
-by executing 
+by executing the following command within the `protected` directory of your humhub installation.
 
 ```
-    php yii
+php yii
 ```
-
-within the `protected` directory of your humhub installation.
 
 ![Command Overview](images/commandOverview.png)
 

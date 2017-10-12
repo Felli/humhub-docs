@@ -6,6 +6,9 @@ The following are supported Markdown syntax for the Social Networking Kit [HumHu
 ```
 # This is an <h1> tag
 ## This is an <h2> tag
+### This is an <h3> tag
+#### This is an <h4> tag
+##### This is an <h5> tag
 ###### This is an <h6> tag
 ```
 
@@ -16,6 +19,7 @@ As Kanye West said:
 > We're living the future so
 > the present is our past.
 ```
+
 ### Emphasis
 
 #### Bold
@@ -25,18 +29,12 @@ __This will also be bold__
 ```
 
 #### Italic
-
 ```
 *This text will be italic*
 _This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
 ```
 
-```
-_You **can** combine both as well_
-```
+> Note: `_You **can** combine both as well_`
 
 ### Code
 
@@ -45,20 +43,19 @@ _You **can** combine both as well_
 I think you should use an
 `<addr>` element here instead.
 ```
-#### Syntax highlighting
 
+#### Syntax highlighting
 ```
-\```\
-javascript
+\```javascript
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
   }
 }
-\```\
+```\
 ```
 
-> Note: That all "`\`" must be removed and all "```" must be on it's own line for Syntax highlighting to work!
+> Note: That all "`\`" must be removed and all "<code>```</code>" must be on its own line for Syntax highlighting to work!
 
 ### Lists
 
@@ -72,10 +69,10 @@ function fancyAlert(arg) {
 #### Ordered
 ```
 1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
+2. Item 2
+3. Item 3
+   a. Item 3a
+   b. Item 3b
 ```
 
 ### Links
@@ -89,12 +86,12 @@ http://github.com - automatic!
 #### Non-Linked Images
 ```
 ![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+Format: ![Alt Text](image url) - Note: Must have a image file type or won't work.
 ```
 
 #### Linked Images
 ```
-[![Alt Text](/images/logo.png)](www.example.com)
+[![Alt Text](/images/logo.png)](www.example.com) - Note: Must have a image file type or won't work.
 ```
 
 ### Tables
