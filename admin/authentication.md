@@ -9,7 +9,7 @@ The profile field attribute mapping can be defined at `Administration -> Users -
 
 ### Date field synchronisation
 
-If you're using custom date formats in our ldap backend, you can specify different formats
+If you're using custom date formats in our LDAP backend, you can specify different formats
 in the [configuration file](advanced-configuration.md).
 
 ```php
@@ -58,7 +58,7 @@ Google
 ------
 
 In order to use Google OAuth you must create a project at <https://console.developers.google.com/project>
-and setup its credentials at <https://console.developers.google.com/project/[yourProjectId]/apiui/credential>.
+and set up its credentials at <https://console.developers.google.com/project/[yourProjectId]/apiui/credential>.
 
 In order to enable using scopes for retrieving user attributes, you should also enable Google+ API at
 <https://console.developers.google.com/project/[yourProjectId]/apiui/api/plus>.
@@ -132,7 +132,7 @@ Microsoft Live
 
 In order to use Microsoft Live OAuth you must register your application at <https://account.live.com/developers/applications>.
 
-Also add a new Platform and allow following Redirect URI.
+Also, add a new Platform and allow following Redirect URI.
 
 - https://domain/path-to-humhub/user/auth/external (With clean urls enabled)
 - https://domain/path-to-humhub/index.php (Without clean urls)

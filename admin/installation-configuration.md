@@ -10,7 +10,7 @@ E-Mails
 Depending on your environment you are using, you may want to specify a local or remote SMTP Server.
 You can change the mail-server settings under `Administration -> Mailing -> Server Settings`.
 
-By default the PHP Mail Transport is used. <http://php.net/manual/en/mail.setup.php>
+By default, the PHP Mail Transport is used. <http://php.net/manual/en/mail.setup.php>
 
 
 

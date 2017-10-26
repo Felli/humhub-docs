@@ -24,7 +24,7 @@ Make sure following directories are not accessible by web:
 - protected
 - uploads/file
 
-By default these folders are protected with a ".htaccess" file.
+By default, these folders are protected with a ".htaccess" file.
 
 
 Limit User Access
@@ -39,7 +39,7 @@ If you're running a private social network, make sure the user registration is d
 Keep up with the latest HumHub version
 ---------------------------------------
 
-As admin you'll receive a notification when a new HumHub version is released. We recommend to always use the latest stable version.
+As an admin you'll receive a notification when a new HumHub version is released. We recommend to always use the latest stable version.
 
 We take security very seriously and continuously improving the security features of HumHub. 
 

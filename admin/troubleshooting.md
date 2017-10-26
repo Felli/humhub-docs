@@ -19,7 +19,7 @@ Github - Bugtracker
 **When filing a new bug, please include:**
 
 - Descriptive title - use keywords so others can find your bug (avoiding duplicates)
-- Steps to trigger the problem that are specific, and repeatable
+- Specific and repeatable steps that trigger the problem
 - What happens when you follow the steps, and what you expected to happen instead.
 - Include the exact text of any error messages if applicable (or upload screenshots).
 - HumHub version (or if you're pulling directly from Git, your current commit SHA - use git rev-parse HEAD)
