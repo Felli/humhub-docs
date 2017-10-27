@@ -18,7 +18,7 @@ FLUSH PRIVILEGES;
 
 > Note: `utf8mb4` is prefered over `utf8` since MySQL 5.5.3 please refer to the [mysql documentation](https://dev.mysql.com/doc/refman/5.5/en/charset-unicode-utf8mb4.html) for more infos.
 
-> Warning: Make sure to use the **utf8_general_ci** database collation!
+> Warning: Make sure to use the **utf8mb4_unicode_ci** database collation!
 
 
 Download HumHub Core Files
