@@ -24,7 +24,7 @@ composer global require "codeception/codeception=2.0.*" "codeception/specify=*" 
 - Create test Database:
 
 ```
-CREATE DATABASE `humhub_test` CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE `humhub` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 - Configure database access:
