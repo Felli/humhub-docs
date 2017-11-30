@@ -22,11 +22,11 @@ The following is a default setup for CloudLinux (CentOS) 6 and may not work for 
 The following is a default setup for cPanel Hosted Server and may not work for all users.
 
 ```
-php-cli /home/USERNAME/public_html/WEB-DIRECTORY/protected/yii cron/hourly >/dev/null 2>&1
+/usr/local/bin/php /home/USERNAME/public_html/WEB-DIRECTORY/protected/yii cron/hourly >/dev/null 2>&1
 
 0,30 * * * *
 
-php-cli /home/USERNAME/public_html/WEB-DIRECTORY/protected/yii cron/daily >/dev/null 2>&1
+/usr/local/bin/php /home/USERNAME/public_html/WEB-DIRECTORY/protected/yii cron/daily >/dev/null 2>&1
 
 00 0,12 * * *
 ```
@@ -44,7 +44,15 @@ Refer to this [post](https://stackoverflow.com/questions/16700749/setting-up-cro
 ### OVH
 [Follow this link](https://www.ovh.com/us/g1990.hosting_automated_taskscron)!
 
-`Example TBA`
+Create the following files then follow the above link.
+
+**cronh.php**
+
+`<?php $humhubh = '/usr/local/php5.6/bin/php '.__DIR__.'/protected/yii cron/hourly '; exec($humhubh); ?>`
+
+**crond.php**
+
+`<?php $humhubd = '/usr/local/php5.6/bin/php '.__DIR__.'/protected/yii cron/daily '; exec($humhubd); ?>`
 
 ### Debian
 Please read up on this [article](https://debian-administration.org/article/56/Command_scheduling_with_cron).
